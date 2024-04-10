@@ -80,7 +80,20 @@ def stream_markup_timer(_, chat_id, played, dur):
                 url=f"{SUPPORT_CHAT}",
 
             ),
-        ],
+             [
+            InlineKeyboardButton(
+
+                text="☢ᴄᴏᴍᴍᴜɴɪᴛʏ☢",
+
+                url=f"https://whatsapp.com/channel/0029VaaXW4X4CrfdPGJrFg11"),
+         InlineKeyboardButton(
+
+                text="☢ᴡᴇʙsɪᴛᴇ☢",
+
+                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/",
+
+            ),
+        ],       
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ],
     return buttons
@@ -124,9 +137,8 @@ def stream_markup(_, chat_id):
 
             ),
         ],
-    ]
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
+        ],
     return buttons
 
 
