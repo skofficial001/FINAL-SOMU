@@ -252,7 +252,7 @@ HELP_25 = """
 Available commands:
 • /eval check code: Check code.
 """
-ʜᴇʟᴘ_𝟸6 = """
+HELP_26 = """
 <b><u>ғᴇᴅᴇʀᴀᴛɪᴏɴ ʙᴀɴ :</b></u>
 ғᴇᴅᴇʀᴀᴛɪᴏɴ ʙᴀɴ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ɴᴏᴡ ᴏɴ sᴀɴᴋɪ xᴅ
 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
