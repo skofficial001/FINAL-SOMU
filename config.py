@@ -22,6 +22,8 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "SMILE_GIRL_ASSISTANT")
 EVALOP = list(map(int, getenv("EVALOP", "5285364677").split()))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://Mrdaxx123:Mrdaxx123@cluster0.q1da65h.mongodb.net/?retryWrites=true&w=majority")
+# for fedban 
+COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
