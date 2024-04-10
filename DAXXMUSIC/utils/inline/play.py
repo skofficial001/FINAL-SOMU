@@ -90,7 +90,7 @@ def stream_markup_timer(_, chat_id, played, dur):
 
                 text="☢ᴡᴇʙsɪᴛᴇ☢",
 
-                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/",
+                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/)",
 
             ),
         ],       
@@ -133,7 +133,7 @@ def stream_markup(_, chat_id):
 
                 text="☢ᴡᴇʙsɪᴛᴇ☢",
 
-                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/",
+                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/"),
 
             ),
         ],
