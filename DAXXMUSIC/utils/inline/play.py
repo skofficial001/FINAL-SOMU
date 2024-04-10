@@ -80,6 +80,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 url=f"{SUPPORT_CHAT}",
 
             ),
+    ],          
              [
             InlineKeyboardButton(
 
