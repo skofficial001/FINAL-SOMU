@@ -27,20 +27,8 @@ from strings import get_string
 
 
 
-YUMI_PICS = [
-"https://telegra.ph/file/c615b8d5aa215d9e1fde0.jpg",
-"https://telegra.ph/file/b1fe6304fbc80b37d1276.jpg",
-"https://telegra.ph/file/d508f82183be944149e4f.jpg",
-"https://telegra.ph/file/c74c8168e9abb0748ef21.jpg",
-"https://telegra.ph/file/c2cefef04a79b4ce65dfe.jpg",
-"https://telegra.ph/file/ef1271bbdd1d2ca3f79f1.jpg",
-"https://telegra.ph/file/229174c9e856532bd39b6.jpg",
-"https://telegra.ph/file/5f012301a5453f67e11a7.jpg",
-"https://telegra.ph/file/b1a60eb37babad1695caf.jpg",
-"https://telegra.ph/file/33f0bbccd9ed725e642dc.jpg",
-"https://telegra.ph/file/8c276526481ae68a9250a.jpg",
-"https://telegra.ph/file/11d0de7bf0926026d688c.jpg"
-
+YUMI_VIDS = [
+"https://telegra.ph/file/c8cdcbeb80c56b499797e.mp4",
 ]
 
 
@@ -53,8 +41,8 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            return await message.reply_photo(
-                random.choice(YUMI_PICS),
+            return await message.reply_video(
+                random.choice(YUMI_VIDS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -108,8 +96,8 @@ async def start_pm(client, message: Message, _):
         served_chats = len(await get_served_chats())
         served_users = len(await get_served_users())
         UP, CPU, RAM, DISK = await bot_sys_stats()
-        await message.reply_photo(
-            random.choice(YUMI_PICS),
+        await message.reply_video(
+            random.choice(YUMI_VIDS),
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM,served_users,served_chats),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -125,8 +113,8 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
-    await message.reply_photo(
-        random.choice(YUMI_PICS),
+    await message.reply_video(
+        random.choice(YUMI_VIDS),
         caption=_["start_2"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
@@ -160,8 +148,8 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_photo(
-                    random.choice(YUMI_PICS),
+                await message.reply_video(
+                    random.choice(YUMI_VIDS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
