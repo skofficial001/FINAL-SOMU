@@ -28,7 +28,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper"),
             InlineKeyboardButton(
                 text=_["S_B_11"],
-                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/",
+                url=f"https://telegra.ph/SANKI-XD-MUSIC-05-27",
             )
         ],
         [
@@ -39,7 +39,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
             InlineKeyboardButton(
                 text=_["S_B_12"],
-                url=f"https://whatsapp.com/channel/0029VaaXW4X4CrfdPGJrFg11",
+                url=f"https://t.me/SANKI_XDX",
             )
         ],   
     ]
