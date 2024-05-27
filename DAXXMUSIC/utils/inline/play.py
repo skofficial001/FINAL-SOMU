@@ -86,12 +86,12 @@ def stream_markup_timer(_, chat_id, played, dur):
 
                 text="☢ᴄᴏᴍᴍᴜɴɪᴛʏ☢",
 
-                url=f"https://whatsapp.com/channel/0029VaaXW4X4CrfdPGJrFg11"),
+                url=f"https://t.me/SANKI_XDX"),
          InlineKeyboardButton(
 
                 text="☢ᴡᴇʙsɪᴛᴇ☢",
 
-                url=f"https://skofficial001.github.io/SKOFFICIAL.github.io/"),
+                url=f"https://telegra.ph/SANKI-XD-MUSIC-05-27"),
         ],       
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
