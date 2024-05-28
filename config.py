@@ -14,7 +14,7 @@ BOT_TOKEN = getenv("BOT_TOKEN","6522822140:AAEmMPj-0uffr0VdKcptvuYUZhVVkfKnYW8")
 # Add Owner Username without @ 
 OWNER_USERNAME = getenv("OWNER_USERNAME","ToXiC_BoY_OFFICIAL")
 #Add HANDLER username Without @
-HANDLER_USERNAME = getnev("HANDLER_USERNAME","Aadi29104")
+HANDLER_USERNAME = getenv("HANDLER_USERNAME","Aadi29104")
 # Get Your bot username
 BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_OFFICIAL_MUSIC_BOT")
 # Don't Add style font 
