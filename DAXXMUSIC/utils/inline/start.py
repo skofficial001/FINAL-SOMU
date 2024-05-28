@@ -43,4 +43,7 @@ def private_panel(_):
             )
         ],   
     ]
+    [
+        InlineKeyboardButton(text=_["S_B_13"], user_id=config.HANDLER_ID),
+      ],
     return buttons
