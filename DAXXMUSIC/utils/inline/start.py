@@ -26,11 +26,8 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper"),
-            InlineKeyboardButton(
-                text=_["S_B_11"],
-                url=f"https://telegra.ph/SANKI-XD-MUSIC-05-27",
-            )
-        ],
+            InlineKeyboardButton(text=_["S_B_13"], user_id=config.HANDLER_ID),
+        ]
         [
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=_["S_B_10"], url=config.SUPPORT_CHAT),
@@ -42,8 +39,5 @@ def private_panel(_):
                 url=f"https://t.me/SANKI_XDX",
             )
         ],   
-    ]
-    [
-        InlineKeyboardButton(text=_["S_B_13"], user_id=config.HANDLER_ID),
     ]
     return buttons
