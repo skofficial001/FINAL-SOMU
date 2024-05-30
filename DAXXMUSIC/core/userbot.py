@@ -96,7 +96,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("SANKI_MUSIC_OFFICIAL
+                await self.three.join_chat("SANKI_MUSIC_OFFICIAL")
                 
                 await self.one.join_chat("SANKI_MUSIC_OFFICIAL")
             except:
