@@ -13,7 +13,7 @@ from config import BANNED_USERS, VERSION_IMG_URL
 
 @app.on_message(filters.command("version", prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
 @language
-async def ping_com(client, message: Message, _):
+async def version_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_photo(
         photo=VERSION_IMG_URL,
