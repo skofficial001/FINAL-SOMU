@@ -30,5 +30,5 @@ def send_birthday_announcement():
         cake = pyo.generate(['Birthday'])
         
         # Send birthday announcement to owner
-        bot.send_message(OWNER_CHAT_ID, f"🎉 Happy Birthday! 🎂\n\n{cake}")
+        bot.send_message(OWNER_ID, f"🎉 Happy Birthday! 🎂\n\n{cake}")
 
