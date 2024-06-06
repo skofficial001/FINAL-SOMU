@@ -1,6 +1,7 @@
 import datetime
 import pyogram
 from DAXXMUSIC import app
+import config
 
 # Initialize Pyogram
 pyo = pyogram.Pyogram()
