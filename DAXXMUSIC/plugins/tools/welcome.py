@@ -46,7 +46,7 @@ def circle(pfp, size=(500, 500)):
 
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("DAXXMUSIC/assets/DAXXMUSIC/assets/1717932827259493.mov")
+    background = Image.open("DAXXMUSIC/assets/DAXXMUSIC/assets/wel3.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((1157, 1158))
@@ -58,8 +58,8 @@ def welcomepic(pic, user, chatname, id, uname):
     draw.text((1800, 965), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
     pfp_position = (391, 336)
     background.paste(pfp, pfp_position, pfp)
-    background.save(f"downloads/welcome#{id}.mov")
-    return f"downloads/welcome#{id}.mov"
+    background.save(f"downloads/welcome#{id}.png")
+    return f"downloads/welcome#{id}.png"
 
 @ app.on_chat_member_updated(filters.group, group=-3)
 async def greet_group(_, member: ChatMemberUpdated):
@@ -74,10 +74,10 @@ async def greet_group(_, member: ChatMemberUpdated):
     user = member.new_chat_member.user if member.new_chat_member else member.from_user
     try:
         pic = await app.download_media(
-            user.photo.big_file_id, file_name=f"pp{user.id}.mov"
+            user.photo.big_file_id, file_name=f"pp{user.id}.png"
         )
     except AttributeError:
-        pic = "DAXXMUSIC/assets/DAXXMUSIC/assets/1717932827259493.mov"
+        pic = "DAXXMUSIC/assets/DAXXMUSIC/assets/wel3.png"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -87,7 +87,7 @@ async def greet_group(_, member: ChatMemberUpdated):
         welcomeimg = welcomepic(
             pic, user.first_name, member.chat.title, user.id, user.username
         )
-        temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_mov(
+        temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_png(
             member.chat.id,
             photo=welcomemov,
             caption=f"""
@@ -103,8 +103,8 @@ Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
     except Exception as e:
         LOGGER.error(e)
     try:
-        os.remove(f"downloads/welcome#{user.id}.mov")
-        os.remove(f"downloads/pp{user.id}.mov")
+        os.remove(f"downloads/welcome#{user.id}.png")
+        os.remove(f"downloads/pp{user.id}.png")
     except Exception as e:
         pass
 
