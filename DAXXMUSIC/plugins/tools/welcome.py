@@ -46,7 +46,7 @@ def circle(pfp, size=(500, 500)):
 
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("DAXXMUSIC/assets/wel2.png")
+    background = Image.open("DAXXMUSIC/assets/DAXXMUSIC/assets/1717932827259493.mov")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((1157, 1158))
@@ -58,10 +58,10 @@ def welcomepic(pic, user, chatname, id, uname):
     draw.text((1800, 965), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
     pfp_position = (391, 336)
     background.paste(pfp, pfp_position, pfp)
-    background.save(f"downloads/welcome#{id}.png")
-    return f"downloads/welcome#{id}.png"
+    background.save(f"downloads/welcome#{id}.mov")
+    return f"downloads/welcome#{id}.mov"
 
-@app.on_chat_member_updated(filters.group, group=-3)
+@ app.on_chat_member_updated(filters.group, group=-3)
 async def greet_group(_, member: ChatMemberUpdated):
     chat_id = member.chat.id
     A = await wlcm.find_one(chat_id)
@@ -74,10 +74,10 @@ async def greet_group(_, member: ChatMemberUpdated):
     user = member.new_chat_member.user if member.new_chat_member else member.from_user
     try:
         pic = await app.download_media(
-            user.photo.big_file_id, file_name=f"pp{user.id}.png"
+            user.photo.big_file_id, file_name=f"pp{user.id}.mov"
         )
     except AttributeError:
-        pic = "DAXXMUSIC/assets/wel2.png"
+        pic = "DAXXMUSIC/assets/DAXXMUSIC/assets/1717932827259493.mov"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -87,9 +87,9 @@ async def greet_group(_, member: ChatMemberUpdated):
         welcomeimg = welcomepic(
             pic, user.first_name, member.chat.title, user.id, user.username
         )
-        temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
+        temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_mov(
             member.chat.id,
-            photo=welcomeimg,
+            photo=welcomemov,
             caption=f"""
 Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
 ╭───── • ◆ • ─────╮
@@ -98,13 +98,13 @@ Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
   Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
 ╰───── • ◆ • ─────╯
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/SANKI_OFFICIAL_MUSIC_BOT?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/SANKI_MUSIC_XD_BOT?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)
     try:
-        os.remove(f"downloads/welcome#{user.id}.png")
-        os.remove(f"downloads/pp{user.id}.png")
+        os.remove(f"downloads/welcome#{user.id}.mov")
+        os.remove(f"downloads/pp{user.id}.mov")
     except Exception as e:
         pass
 
