@@ -10,18 +10,18 @@ load_dotenv()
 API_ID = int(getenv("API_ID","24740695"))
 API_HASH = getenv("API_HASH","a95990848f2b93b8131a4a7491d97092")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","6522822140:AAEmMPj-0uffr0VdKcptvuYUZhVVkfKnYW8")
+BOT_TOKEN = getenv("BOT_TOKEN","7005088837:AAGb6L60_BmGef5vmDWxd7ZH9PirHJA60Z0")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","ToXiC_BoY_OFFICIAL")
+OWNER_USERNAME = getenv("OWNER_USERNAME","ll_SANKI_XD")
 #Add HANDLER username Without @
 HANDLER_USERNAME = getenv("HANDLER_USERNAME","Aadi29104")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_OFFICIAL_MUSIC_BOT")
+BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_MUSIC_XD_BOT")
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "SANKI XD")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "SMILE_GIRL_ASSISTANT")
-EVALOP = list(map(int, getenv("EVALOP", "5285364677").split()))
+ASSUSERNAME = getenv("ASSUSERNAME" , "II_SANKI_ll")
+EVALOP = list(map(int, getenv("EVALOP", "6971100005").split()))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://Mrdaxx123:Mrdaxx123@cluster0.q1da65h.mongodb.net/?retryWrites=true&w=majority")
 # for fedban 
@@ -30,10 +30,10 @@ COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID","-1001959856415"))
+LOGGER_ID = int(getenv("LOGGER_ID","-1002100433415"))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6691393517))
+OWNER_ID = int(getenv("OWNER_ID", 6971100005))
 
 # Get this value from on telegram by /id
 HANDLER_ID = int(getenv("HANDLER_ID","6190297573"))
