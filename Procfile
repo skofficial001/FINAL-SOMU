@@ -1,2 +1,2 @@
 worker: bash start
-start:production
+web: new_sanki start:bash start
