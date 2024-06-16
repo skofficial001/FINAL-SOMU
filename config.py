@@ -10,13 +10,13 @@ load_dotenv()
 API_ID = int(getenv("API_ID","24740695"))
 API_HASH = getenv("API_HASH","a95990848f2b93b8131a4a7491d97092")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","7005088837:AAGb6L60_BmGef5vmDWxd7ZH9PirHJA60Z0")
+BOT_TOKEN = getenv("BOT_TOKEN","7473830088:AAFUvpAti-vlZMG7ADwK8toY199W1OZh4cc")
 # Add Owner Username without @ 
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_SANKI_XD")
 #Add HANDLER username Without @
 HANDLER_USERNAME = getenv("HANDLER_USERNAME","Aadi29104")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_MUSIC_XD_BOT")
+BOT_USERNAME = getenv("BOT_USERNAME" , "II_SANKI_ll_BOT")
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "SANKI XD")
 #get Your Assistant User name
@@ -41,9 +41,9 @@ HANDLER_ID = int(getenv("HANDLER_ID","6190297573"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "kolab")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", "HRKU-a4df2972-fcd6-48cf-8dad-37757014252d")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
