@@ -41,7 +41,7 @@ HANDLER_ID = int(getenv("HANDLER_ID","6190297573"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "kolab")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "kolaby")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "HRKU-a4df2972-fcd6-48cf-8dad-37757014252d")
 
