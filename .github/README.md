@@ -24,6 +24,8 @@
 
 <p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=DAXXTEAM&show_icons=true&locale=en&layout=compact" alt="DAXXTEAM" /></p>
 
+[![ᴅᴇᴘʟᴏʏ ᴡɪᴛʜ ᴋᴏʏᴇʙ](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/skofficial0/New_sanki-Bot&branch=koyeb&name=New_sanki)
+
 [![Contributors](https://contrib.rocks/image?repo=DAXXTEAM/DAXXMUSIC)](https://github.com/DAXXTEAM/DAXXMUSIC/graphs/contributors)
 
 ### Contact :
