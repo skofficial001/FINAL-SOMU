@@ -1,7 +1,7 @@
 import socket
 import time
 
-import Koyeb3
+import heroku3
 from pyrogram import filters
 
 import config
@@ -15,8 +15,8 @@ HAPP = None
 _boot_ = time.time()
 
 
-def is_Koyeb():
-    return "Koyeb" in socket.getfqdn()
+def is_heroku():
+    return "heroku" in socket.getfqdn()
 
 
 XCB = [
@@ -28,9 +28,9 @@ XCB = [
     "git",
     "heroku",
     "push",
-    str(config.KOYEB_API_KEY),
+    str(config.HEROKU_API_KEY),
     "https",
-    str(config.KOYEB_APP_NAME),
+    str(config.HEROKU_APP_NAME),
     "HEAD",
     "master",
 ]
@@ -61,13 +61,13 @@ async def sudo():
     LOGGER(__name__).info(f"𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 𝗗𝗢𝗡𝗘✨🎋.")
 
 
-def Koyeb():
+def heroku():
     global HAPP
-    if is_Koyeb:
-        if config.KOYEB_API_KEY and config.KOYEB_APP_NAME:
+    if is_heroku:
+        if config.HEROKU_API_KEY and config.HEROKU_APP_NAME:
             try:
-                Heroku = Koyeb3.from_key(config.KOYEB_API_KEY)
-                HAPP = Koyeb.app(config.KOYEB_APP_NAME)
+                Heroku = heroku3.from_key(config.HEROKU_API_KEY)
+                HAPP = Heroku.app(config.HEROKU_APP_NAME)
                 LOGGER(__name__).info(f"🍟𝗛𝗘𝗥𝗢𝗞𝗨 𝗔𝗣𝗣 𝗡𝗔𝗠𝗘 𝗟𝗢𝗔𝗗......💦")
             except BaseException:
                 LOGGER(__name__).warning(
