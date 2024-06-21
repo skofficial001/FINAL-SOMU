@@ -37,7 +37,7 @@ spotipy
 tgcrypto
 telegraph
 unidecode
-yt-dlp==2024.5.27
+yt-dlp==2023.11.16
 youtube-search
 youtube-search-python
 gtts
@@ -46,6 +46,3 @@ lexica-api==1.4.7
 httpx==0.25.2
 gpytranslate
 openai==0.28.0
-Flask==2.2.2
-gunicorn==20.1.0
-koyeb
