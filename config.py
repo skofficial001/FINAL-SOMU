@@ -23,7 +23,7 @@ BOT_NAME = getenv("BOT_NAME" , "SANKI XD")
 ASSUSERNAME = getenv("ASSUSERNAME" , "II_SANKI_ll")
 EVALOP = list(map(int, getenv("EVALOP", "6971100005").split()))
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://Mrdaxx123:Mrdaxx123@cluster0.q1da65h.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://DxLEGEND143:DxLEGEND143@dxlegend.oztipqk.mongodb.net/?retryWrites=true&w=majority&appName=DxLEGEND")
 # for fedban 
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 
