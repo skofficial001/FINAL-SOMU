@@ -4,10 +4,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends ffmpeg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-RUN instaloader
 
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install --no-cache-dir -U -r requirements.txt
-RUN pip install --upgrade yt-dlp
+
 CMD bash start
