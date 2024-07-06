@@ -30,7 +30,7 @@ COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID","-1002100433415"))
+LOGGER_ID = int(getenv("LOGGER_ID","-1002212825659"))
 
 # Get this value from  on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 6971100005))
