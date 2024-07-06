@@ -7,10 +7,10 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID","24740695"))
-API_HASH = getenv("API_HASH","a95990848f2b93b8131a4a7491d97092")
+API_ID = int(getenv("API_ID","28588693"))
+API_HASH = getenv("API_HASH","fac94f1f1aa4aa395280a670ddf9c0f2")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","7473830088:AAFUvpAti-vlZMG7ADwK8toY199W1OZh4cc")
+BOT_TOKEN = getenv("BOT_TOKEN","7317428926:AAEA_T2eN9r9SuBgCyI7ydsFmcCZnGcu5zg")
 # Add Owner Username without @ 
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_SANKI_XD")
 #Add HANDLER username Without @
